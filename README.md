@@ -14,5 +14,3 @@ Anotações sobre boas práticas e Clean Code em Java.
 Linguagem: Java
 
 IDE: IntelliJ IDEA
-
-Controle de Versão: Git & GitHub

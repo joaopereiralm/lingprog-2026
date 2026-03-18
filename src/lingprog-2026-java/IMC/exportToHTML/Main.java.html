@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #7a7e85;}
+.s5 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Scanner</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">Main </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main </span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+        <span class="s1">Scanner sc </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Escreva seu nome: &quot;</span><span class="s2">);</span>
+        <span class="s1">String nome </span><span class="s2">= </span><span class="s1">sc</span><span class="s2">.</span><span class="s1">next</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Escreva sua idade: &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">idade </span><span class="s2">= </span><span class="s1">sc</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Escreva sua altura: &quot;</span><span class="s2">);</span>
+        <span class="s0">float </span><span class="s1">altura </span><span class="s2">= </span><span class="s1">sc</span><span class="s2">.</span><span class="s1">nextFloat</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Escreva seu peso: &quot;</span><span class="s2">);</span>
+        <span class="s0">float </span><span class="s1">peso </span><span class="s2">= </span><span class="s1">sc</span><span class="s2">.</span><span class="s1">nextFloat</span><span class="s2">();</span>
+
+        <span class="s4">//calculo do IMC</span>
+        <span class="s0">float </span><span class="s1">imc </span><span class="s2">= </span><span class="s1">peso</span><span class="s2">/(</span><span class="s1">altura</span><span class="s2">*</span><span class="s1">altura</span><span class="s2">);</span>
+        <span class="s1">String classificacao</span><span class="s2">;</span>
+        <span class="s1">String imca </span><span class="s2">= </span><span class="s1">String</span><span class="s2">.</span><span class="s1">format</span><span class="s2">(</span><span class="s3">&quot;%.2f&quot;</span><span class="s2">, </span><span class="s1">imc</span><span class="s2">);</span>
+
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">imc </span><span class="s2">&lt;= </span><span class="s5">18.5</span><span class="s2">){</span>
+            <span class="s1">classificacao </span><span class="s2">= </span><span class="s3">&quot;Abaixo do peso&quot;</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s0">else if </span><span class="s2">(</span><span class="s1">imc </span><span class="s2">&gt; </span><span class="s5">18.5 </span><span class="s2">&amp;&amp; </span><span class="s1">imc </span><span class="s2">&lt;= </span><span class="s5">24.99</span><span class="s2">){</span>
+            <span class="s1">classificacao </span><span class="s2">= </span><span class="s3">&quot;Normal&quot;</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s0">else if </span><span class="s2">(</span><span class="s1">imc </span><span class="s2">&gt; </span><span class="s5">25 </span><span class="s2">&amp;&amp; </span><span class="s1">imc</span><span class="s2">&lt;= </span><span class="s5">29.99</span><span class="s2">){</span>
+            <span class="s1">classificacao </span><span class="s2">= </span><span class="s3">&quot;Acima do peso&quot;</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s0">else </span><span class="s2">{</span>
+            <span class="s1">classificacao </span><span class="s2">= </span><span class="s3">&quot;Obesidade&quot;</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;</span><span class="s0">\n</span><span class="s3">Seu diagnóstico:&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Nome: &quot; </span><span class="s2">+ </span><span class="s1">nome</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Idade: &quot; </span><span class="s2">+ </span><span class="s1">idade</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Seu IMC: &quot; </span><span class="s2">+ </span><span class="s1">imca</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s1">classificacao</span><span class="s2">);</span>
+    <span class="s2">}</span>
+<span class="s2">}</span></pre>
+</body>
+</html>

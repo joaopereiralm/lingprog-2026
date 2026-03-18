@@ -11,7 +11,7 @@ Projetos práticos (sistemas de cálculo, automações, menus interativos).
 Anotações sobre boas práticas e Clean Code em Java.
 
 🛠️ Tecnologias e Ferramentas
-Linguagem: Java (JDK 17 ou superior)
+Linguagem: Java
 
 IDE: IntelliJ IDEA
 

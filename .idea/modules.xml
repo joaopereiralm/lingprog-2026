@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Dado da sorte/Dado da sorte.iml" filepath="$PROJECT_DIR$/Dado da sorte/Dado da sorte.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Estruturas_repeticao/Estruturas_repeticao.iml" filepath="$PROJECT_DIR$/Estruturas_repeticao/Estruturas_repeticao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IMC/IMC.iml" filepath="$PROJECT_DIR$/IMC/IMC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lista de lanches/Lista de lanches.iml" filepath="$PROJECT_DIR$/Lista de lanches/Lista de lanches.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sistema de lucros/Sistema de lucros.iml" filepath="$PROJECT_DIR$/Sistema de lucros/Sistema de lucros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumo_kwh/consumo_kwh.iml" filepath="$PROJECT_DIR$/consumo_kwh/consumo_kwh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/lingprog-2026-java.iml" filepath="$PROJECT_DIR$/.idea/lingprog-2026-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/livros/livros.iml" filepath="$PROJECT_DIR$/livros/livros.iml" />
+    </modules>
+  </component>
+</project>
